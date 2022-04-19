@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+    <link rel="stylesheet" href="estilo/main.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="manifest" href="icon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="icon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+
+    <div>
+        <form class="form1" action="">
+            <fieldset class="first"> 
+    
+                <legend>Seus dados</legend>
+    
+                <label for="nome">Nome completo</label>
+                <input required maxlength="50" placeholder="Digite seu nome" class="text" type="text" id="nome">
+    
+                
+                
+    
+                <label for="email">E-mail</label>
+                <input required maxlength="50" placeholder="Digite seu e-mail" class="text" type="email" id="email">
+    
+                
+                
+    
+                <label for="telefone">telefone</label>
+                <input required maxlength="15" placeholder="Ex.: (00) 00000-0000" class="text" type="tel" id="telefone">
+    
+                
+                
+    
+                <label for="link">Página do seu facebook</label>
+                <input  maxlength="200" placeholder="www.facebook.com/" class="text" type="url" id="link">
+    
+                
+                
+    
+                <label for="data">Data de nascimento</label>
+                <input required max="2020-01-31" type="date" id="data">
+    
+                
+                
+    
+                <label for="data2">Quando você está preenchendo este formulário?</label>
+                <input required type="datetime-local" id="data2">
+    
+                
+                
+    
+                <label for="mes/ano">Quando você começou a jogar?</label>
+                <input type="month" id="mes/ano">
+    
+                
+                
+    
+                <label for="semana">Quantas semanas você já ficou sem jogar? E em qual ano?</label>
+                <input type="week" id="semana">
+    
+                
+                
+    
+                <input id="btn1" class="btnn" title="Confirmar" onclick="topo()" type="button" value="Confirmar">
+            </fieldset >
+    
+            <fieldset class="second">
+    
+                <legend>Dados sobre o herói</legend>
+    
+                <label for="selecionar">Selecione um herói</label>
+                <select required name="selecionar" id="selecionar">
+                    <option value="">Selecione</option>
+                    <optgroup label="Dano">
+                        <option value="">Hanzo</option>
+                        <option value="">Mcree</option>
+                    </optgroup>
+    
+                    <optgroup label="Tanque">
+                        <option value="">Roadhog</option>
+                        <option value="">Orisa</option>
+                    </optgroup>
+    
+                    <optgroup label="Suporte">
+                        <option value="">Ana</option>
+                        <option value="">Mercy</option>
+                    </optgroup>
+                </select>
+    
+                
+                
+    
+                <label  for="#">Você costuma jogar com esse herói?</label>
+                <input class="inline" type="radio" name="like" id="sim">
+                <label class="inline" for="sim">Sim</label>
+                <input class="inline" type="radio" name="like" id="nao">
+                <label class="inline" for="nao">Não</label>
+    
+                
+                
+    
+                <label for="horas">Quantas horas de jogo você tem com ele?</label>
+                <input required placeholder="Digite aqui" min="0" type="number">
+    
+                
+                
+    
+                <label for="quant">O quanto Você gosta dele?</label>
+                <input required type="range" name="quant" id="quant" max="10" min="0" step="1" value="1" >
+    
+                
+                
+    
+                <label for="color">Qual você gostaria que fosse a cor predominante dele?</label>
+                <input type="color" name="color" id="color" value="#ffffff">
+    
+                
+                
+    
+                <label for="opnion">Qual a sua opnião geral sobre o herói?</label>
+                
+                <textarea required placeholder="Insira seu texto aqui..." maxlength="200" name="opnion" id="opnion" cols="30" rows="5" style="resize: none;"></textarea>
+                
+                
+                
+    
+                <label for="art">Qual a sua arte favorita desse herói?</label>
+                
+                <input id="art" accept="image/png, image/jpeg"  type="file">
+    
+                
+                <input type="hidden">
+                
+                <div id="btns">
+                    <div><input type="reset" id="limpar" class="" value="" title="Limpar"></div>
+        
+                    <div><input id="btn2" class="" type="image" src="img/enviar2.png" title="Enviar" height="70px" width="70px" alt="Enviar" value="Enviar formulário"></div>
+                </div>
+
+            </fieldset>
+    
+            </form>
+    </div>
+        
+        <form class="search" method="GET" action="http://google.com/search">
+            <label style="font-family: cursive; font-size:20pt ;" class="pesquisa" for="pesquisa">Faça uma pesquisa sobre o jogo</label>
+            <input  placeholder="Digite aqui..." type="search" id="pesquisa" name="q">
+            <input  title="Procurar" class="btnpesquisa" type="submit" value="Procurar">
+        </form>
+        <script>
+            document.getElementById('nome').focus()
+
+            function topo(){
+                window.scrollTo(0, 0)
+                document.getElementById('selecionar').focus();
+            }
+        </script>
+</body>
+</html>

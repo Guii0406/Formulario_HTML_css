@@ -1,0 +1,264 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1.5px;
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+
+input, select, textarea{
+    display: block;
+    font-size: 13pt;
+    padding: 7px;
+    border: none;
+    border-bottom: 0px solid rgb(107, 107, 255);
+    border-left: 4px rgb(107, 107, 255) solid;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.233);
+    border-radius: 7px;
+    /* margin: auto; */
+    margin-bottom: 5px;
+    margin-top: 5px;
+    /* position: relative; */
+    /* box-sizing: border-box; */
+    transition: border-width 0.2s;
+
+}
+
+
+
+#quant{
+    padding: 0;
+    
+}
+label{
+    display: block;
+    /* text-align: center; */
+    font-weight: bold;
+}
+
+.inline{
+    display: inline-block;
+    margin: auto;
+    /* margin-top: 10px; */
+    margin-bottom: 15px;
+    box-shadow: none;
+}
+
+#quant{
+    box-shadow: none;
+}
+#color{
+    border: none;
+}
+
+optgroup{
+    color: rgb(107, 107, 255);
+}
+option{
+    color: black;
+}
+select{
+    letter-spacing: 2px;
+    
+}
+
+fieldset{
+    border: none;
+    border-top: 5px rgb(107, 107, 255) solid;
+    border-right: 8px rgb(107, 107, 255) solid;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: white;
+}
+legend{
+    text-align: center;
+    font-size: 20pt;
+    background-color: white;
+    border-radius: 12px;
+    border-top: 3px rgb(107, 107, 255) solid;
+    border-right: 5px rgb(107, 107, 255) solid;
+    padding: 10px 40px;
+    font-family: cursive;
+    cursor: default;
+    font-weight: bolder;
+
+}
+
+form.form1{
+    display: flex;
+    margin: auto;
+    /* justify-content: center; */
+    justify-content: center;
+    margin-top: 70px;
+}
+.first{
+    margin-right: 10px;
+}
+.second{
+    margin-left: 10px;
+}
+
+.search{
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+    
+}
+
+.pesquisa{
+    background-color: rgba(0, 0, 0, 0.493);
+    padding: 15px;
+    color: white;
+    font-size: 18pt;
+    letter-spacing: 2px;
+    border-bottom: 2px solid white;
+    /* border-top: 2px solid white; */
+    border-radius: 20px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.486);
+    
+}
+
+#pesquisa{
+    width: 25%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 500px;
+    background-image: url(../img/lupa.png);
+    background-color: rgba(255, 255, 255, 0.692);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 98%;
+    transition: width 0.5s;
+    
+}
+
+
+
+#pesquisa:focus{
+    width: 80%;
+    outline: none;
+}
+
+.btnpesquisa{
+    margin: auto;
+    background-color: rgb(69, 148, 201);
+    width: 50%;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    border: none;
+    margin-bottom: 100px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.btnpesquisa:hover{
+    transform: scale(1.1);
+}
+
+.btnpesquisa:active{
+    background-color: rgb(49, 102, 138);
+}
+
+.btnn{
+    border: none;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+    margin: auto;
+}
+
+#btn1{
+    margin-top: 35px;
+    transition: transform 0.2s;
+    background: rgb(69, 148, 201);
+    color: white;
+}
+
+#btn1:hover{
+    transform: scale(1.2);
+}
+
+#limpar{
+    background-image: url(../img/limpar.png);
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0);
+    background-size: cover;
+    /* background-color: black; */
+    width: 70px;
+    height: 70px;
+    border: none;
+    box-shadow: none;
+    /* margin: 0; */
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#limpar:hover{
+    transform: scale(1.2);
+}
+
+#limpar:active{
+    filter: grayscale(0.6);
+}
+
+#btn2{
+    /* margin-top: 40px; */
+    box-shadow: none;
+    transition: transform 0.1s;
+    box-shadow: none;
+    border: none;
+    margin: 0;
+}
+
+#btn2:active{
+    filter: grayscale(0.6);
+    /* transform: scale(0.9); */
+    
+}
+
+#btn2:hover{
+    transform: scale(1.2);
+
+}
+
+#btns{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    
+}
+
+
+#btn1:active{
+    background-color: rgb(49, 102, 138);
+}
+
+title{
+    background-color: white;
+    border-bottom: 1px rgb(107, 107, 255) solid  ;
+}
+
+input:focus{
+    outline: none;
+    border-bottom-width: 2px;
+    
+}
+
+textarea:focus{
+    outline: none;
+    border-bottom-width: 2px;
+}
+select:focus{
+    outline: none;
+    border-bottom-width: 2px;
+}
+
